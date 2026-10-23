@@ -1,0 +1,8 @@
+<config xmlns="http://www.ehcache.org/v3">
+  <cache-template name="entities"><resources><heap unit="entries">1000</heap></resources></cache-template>
+  <cache alias="com.example.model.Utilisateur" uses-template="entities"/>
+  <cache alias="com.example.model.Salle" uses-template="entities"/>
+  <cache alias="com.example.model.Reservation" uses-template="entities"/>
+  <cache alias="default-query-results-region" uses-template="entities"/>
+  <cache alias="default-update-timestamps-region"><resources><heap unit="entries">10000</heap></resources></cache>
+</config>
